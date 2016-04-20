@@ -1,4 +1,3 @@
-/* eslint-env node */
 const conf = require('./webpack.config');
 
 conf.watch = true;

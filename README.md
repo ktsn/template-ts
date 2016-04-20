@@ -1,6 +1,6 @@
 # template-ts
 
-A project template for an TypeScript library.
+A project template for a TypeScript library.
 
 ## License
 

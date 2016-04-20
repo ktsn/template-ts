@@ -1,7 +1,9 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "noImplicitAny": true
+    "target": "es5",
+    "noImplicitAny": true,
+    "sourceMap": true
   },
   "filesGlob": [
     "src/**/*.ts"
