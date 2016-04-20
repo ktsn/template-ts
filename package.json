@@ -3,8 +3,19 @@
   "version": "1.0.0",
   "author": "katashin",
   "private": "true",
+  "description": "A project template for a TypeScript library",
+  "keywords": [
+    "template",
+    "TypeScript"
+  ],
   "license": "MIT",
+  "main": "dist/bundle.js",
   "homepage": "https://github.com/ktsn/template-ts",
+  "bugs": "https://github.com/ktsn/template-ts/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ktsn/template-ts.git"
+  },
   "scripts": {
     "prepublish": "npm run build",
     "build": "gulp build",
