@@ -19,7 +19,10 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "gulp build",
-    "test": "gulp test"
+    "lint": "gulp tslint",
+    "test": "gulp test",
+    "test:ci": "webpack --config webpack.config.test.js && testem ci --launch Firefox,PhantomJS",
+    "postinstall": "typings i"
   },
   "devDependencies": {
     "del": "^2.2.0",
