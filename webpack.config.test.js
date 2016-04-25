@@ -11,7 +11,6 @@ conf.output = {
   filename: 'test.js'
 };
 
-conf.watch = true;
 conf.debug = true;
 conf.devtool = 'source-map';
 

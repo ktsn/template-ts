@@ -1,0 +1,17 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {},
+  "filesGlob": [
+    "**/*.ts",
+    "../src/**/*.ts",
+    "../typings/main.d.ts"
+  ],
+  "files": [
+    "index.ts",
+    "../src/index.ts",
+    "../typings/main.d.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  }
+}
