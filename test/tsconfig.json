@@ -4,12 +4,12 @@
   "filesGlob": [
     "**/*.ts",
     "../src/**/*.ts",
-    "../typings/main.d.ts"
+    "../typings/index.d.ts"
   ],
   "files": [
     "index.ts",
     "../src/index.ts",
-    "../typings/main.d.ts"
+    "../typings/index.d.ts"
   ],
   "atom": {
     "rewriteTsconfig": true
