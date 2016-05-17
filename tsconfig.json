@@ -7,7 +7,7 @@
   },
   "filesGlob": [
     "src/**/*.ts",
-    "typings/main.d.ts"
+    "typings/index.d.ts"
   ],
   "files": [
     "src/index.ts"
