@@ -10,19 +10,15 @@
       true,
       "spaces"
     ],
-    "interface-name": true,
     "jsdoc-format": true,
     "label-position": true,
     "label-undefined": true,
-    "member-access": true,
     "member-ordering": true,
     "no-arg": true,
-    "no-conditional-assignment": true,
     "no-console": true,
     "no-construct": true,
     "no-duplicate-key": true,
     "no-duplicate-variable": true,
-    "no-empty": true,
     "no-eval": true,
     "no-shadowed-variable": true,
     "no-trailing-whitespace": true,
@@ -38,11 +34,14 @@
     ],
     "semicolon": [
       true,
-      "always"
+      "never"
     ],
     "trailing-comma": [
       true,
-      "always"
+      {
+        "singleline": "never",
+        "multiline": "never"
+      }
     ],
     "typedef-whitespace": [
       true,
