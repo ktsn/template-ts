@@ -10,7 +10,8 @@
     "typings/index.d.ts"
   ],
   "files": [
-    "src/index.ts"
+    "src/index.ts",
+    "typings/index.d.ts"
   ],
   "atom": {
     "rewriteTsconfig": true
