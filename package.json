@@ -39,7 +39,7 @@
     "run-sequence": "^1.1.5",
     "testem": "^1.6.0",
     "ts-loader": "^0.8.2",
-    "tslint": "^3.7.4",
+    "tslint": "^3.8.0",
     "typescript": "^1.8.10",
     "typings": "^1.0.3",
     "webpack": "^1.13.0",
