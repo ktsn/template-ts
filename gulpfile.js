@@ -1,7 +1,6 @@
 const gulp = require('gulp')
 const gutil = require('gulp-util')
 const rename = require('gulp-rename')
-const tslint = require('gulp-tslint')
 const uglify = require('gulp-uglify')
 const header = require('gulp-header')
 const webpack = require('webpack')
@@ -13,12 +12,6 @@ const run = require('run-sequence')
 
 gulp.task('clean', () => {
   return del(['.tmp', 'dist'])
-})
-
-gulp.task('tslint', () => {
-  return gulp.src('src/**/*.ts')
-    .pipe(tslint())
-    .pipe(tslint.report('verbose'))
 })
 
 gulp.task('webpack', (done) => {
@@ -66,7 +59,7 @@ gulp.task('header', () => {
     .pipe(gulp.dest('dist'))
 })
 
-gulp.task('build', ['clean', 'tslint'], (done) => {
+gulp.task('build', ['clean'], (done) => {
   run('webpack', 'uglify', 'header', done)
 })
 
