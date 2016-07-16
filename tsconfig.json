@@ -3,17 +3,11 @@
   "compilerOptions": {
     "target": "es5",
     "noImplicitAny": true,
+    "strictNullChecks": true,
     "sourceMap": true
   },
-  "filesGlob": [
+  "include": [
     "src/**/*.ts",
     "typings/index.d.ts"
-  ],
-  "files": [
-    "src/index.ts",
-    "typings/index.d.ts"
-  ],
-  "atom": {
-    "rewriteTsconfig": true
-  }
+  ]
 }

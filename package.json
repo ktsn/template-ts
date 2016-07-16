@@ -42,7 +42,7 @@
     "testem": "^1.6.0",
     "ts-loader": "^0.8.2",
     "tslint": "^3.13.0",
-    "typescript": "^1.8.10",
+    "typescript": "^2.0.0",
     "typings": "^1.0.3",
     "webpack": "^1.13.0",
     "webpack-espower-loader": "^1.0.1"
