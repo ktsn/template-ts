@@ -2,7 +2,7 @@
   "name": "template-ts",
   "version": "1.0.0",
   "author": "katashin",
-  "private": "true",
+  "private": true,
   "description": "A project template for a TypeScript library",
   "keywords": [
     "template",
@@ -22,7 +22,7 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "gulp build",
-    "lint": "tslint \"src/**/*.ts\" && tslint \"test/**/*.ts\"",
+    "lint": "tslint 'src/**/*.ts' && tslint 'test/**/*.ts'",
     "test": "gulp test",
     "test:ci": "webpack --config webpack.config.test.js && testem ci --launch Firefox,PhantomJS",
     "postinstall": "typings i"
