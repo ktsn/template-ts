@@ -4,6 +4,6 @@
   "include": [
     "**/*.ts",
     "../src/**/*.ts",
-    "../typings/index.d.ts"
+    "../node_modules/@types/mocha/index.d.ts"
   ]
 }
