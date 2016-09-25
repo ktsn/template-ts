@@ -4,6 +4,6 @@ import index from '../src/index'
 describe('Entry point', () => {
   it('should provide module', () => {
     const actual = index
-    assert.deepEqual(actual, {})
+    assert.deepStrictEqual(actual, {})
   })
 })
