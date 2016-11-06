@@ -23,7 +23,7 @@
     "url": "https://github.com/ktsn/template-ts.git"
   },
   "scripts": {
-    "prepublish": "npm run build",
+    "prepublish": "npm run test:ci && npm run clean && npm run build",
     "clean": "rm -rf lib dist .tmp",
     "build": "npm run build:ts && npm run build:cjs && npm run build:dev && npm run build:prod",
     "build:ts": "tsc -p .",
@@ -33,7 +33,7 @@
     "watch:test": "webpack --watch --config scripts/webpack.config.test.js",
     "lint": "tslint \"src/**/*.ts\" && tslint \"test/**/*.ts\"",
     "test": "npm run watch:test & testem && kill %1",
-    "test:ci": "webpack --config scripts/webpack.config.test.js && testem ci --launch PhantomJS"
+    "test:ci": "npm run lint && webpack --config scripts/webpack.config.test.js && testem ci --launch PhantomJS"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.32",
