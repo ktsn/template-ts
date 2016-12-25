@@ -26,7 +26,7 @@
     "prepublish": "npm run test:ci && npm run clean && npm run build",
     "clean": "rm -rf lib dist .tmp",
     "build": "npm run build:ts && npm run build:cjs && npm run build:dev && npm run build:prod",
-    "build:ts": "tsc -p .",
+    "build:ts": "tsc -p src",
     "build:cjs": "rollup -c scripts/rollup.config.js --environment BUILD:commonjs",
     "build:dev": "rollup -c scripts/rollup.config.js --environment BUILD:development",
     "build:prod": "rollup -c scripts/rollup.config.js --environment BUILD:production | uglifyjs -mc warnings=false --comments -o dist/template-ts.min.js",
@@ -47,8 +47,8 @@
     "ts-loader": "^1.0.0",
     "tslint": "^4.0.0",
     "tslint-config-ktsn": "^2.0.0",
-    "typescript": "^2.0.3",
-    "webpack": "^1.13.2",
+    "typescript": "^2.1.4",
+    "webpack": "^2.2.0-rc.2",
     "webpack-espower-loader": "^1.0.1"
   }
 }
