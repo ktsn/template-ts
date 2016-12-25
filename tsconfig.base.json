@@ -4,14 +4,9 @@
     "target": "es5",
     "module": "es2015",
     "moduleResolution": "node",
-    "outDir": "lib",
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "strictNullChecks": true,
-    "declaration": true
-  },
-  "include": [
-    "src/**/*.ts"
-  ]
+    "strictNullChecks": true
+  }
 }
