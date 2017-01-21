@@ -44,7 +44,7 @@
     "rollup": "^0.41.1",
     "rollup-plugin-replace": "^1.1.1",
     "testem": "^1.12.0",
-    "ts-loader": "^1.0.0",
+    "ts-loader": "^2.0.0",
     "tslint": "^4.0.0",
     "tslint-config-ktsn": "^2.0.0",
     "typescript": "^2.1.4",
