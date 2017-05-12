@@ -10,8 +10,8 @@
   ],
   "license": "MIT",
   "main": "dist/template-ts.cjs.js",
-  "jsnext:main": "lib/index.js",
-  "typings": "lib/index.d.ts",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "dist",
     "lib"
