@@ -23,8 +23,9 @@
     "url": "https://github.com/ktsn/template-ts.git"
   },
   "scripts": {
-    "prepublish": "npm run test:ci && npm run clean && npm run build",
+    "prepublish": "npm run test && npm run clean && npm run build",
     "clean": "rm -rf lib dist .tmp",
+    "dev": "npm run watch:test & testem && kill %1",
     "build": "npm run build:ts && npm run build:cjs && npm run build:dev && npm run build:prod",
     "build:ts": "tsc -p src",
     "build:cjs": "rollup -c scripts/rollup.config.js --environment BUILD:commonjs",
@@ -32,8 +33,8 @@
     "build:prod": "rollup -c scripts/rollup.config.js --environment BUILD:production | uglifyjs -mc warnings=false --comments -o dist/template-ts.min.js",
     "watch:test": "webpack --watch --config scripts/webpack.config.test.js",
     "lint": "tslint \"src/**/*.ts\" && tslint \"test/**/*.ts\"",
-    "test": "npm run watch:test & testem && kill %1",
-    "test:ci": "npm run lint && webpack --config scripts/webpack.config.test.js && testem ci --launch PhantomJS"
+    "test": "npm run lint && npm run test:unit",
+    "test:unit": "webpack --config scripts/webpack.config.test.js && testem ci --launch PhantomJS"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.32",
