@@ -1,4 +1,4 @@
-import assert = require('power-assert')
+import * as assert from 'power-assert'
 import index from '../src/index'
 
 describe('Entry point', () => {
