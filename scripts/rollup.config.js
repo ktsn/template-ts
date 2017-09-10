@@ -1,11 +1,7 @@
 const replace = require('rollup-plugin-replace')
 const meta = require('../package.json')
 
-const config = {
-  entry: 'lib/index.js',
-  moduleName: 'Lib',
-  plugins: [],
-  banner: `/*!
+const banner = `/*!
  * ${meta.name} v${meta.version}
  * ${meta.homepage}
  *
@@ -14,16 +10,24 @@ const config = {
  * Released under the MIT license
  * ${meta.homepage}/blob/master/LICENSE
  */`
+
+const config = {
+  input: 'lib/index.js',
+  output: {
+    name: 'Lib',
+    banner
+  },
+  plugins: []
 }
 
 switch (process.env.BUILD) {
   case 'commonjs':
-    config.dest = `dist/${meta.name}.cjs.js`
-    config.format = 'cjs'
+    config.output.file = `dist/${meta.name}.cjs.js`
+    config.output.format = 'cjs'
     break
   case 'development':
-    config.dest = `dist/${meta.name}.js`
-    config.format = 'umd'
+    config.output.file = `dist/${meta.name}.js`
+    config.output.format = 'umd'
     config.plugins.push(
       replace({
         'process.env.NODE_ENV': JSON.stringify('development')
@@ -31,7 +35,7 @@ switch (process.env.BUILD) {
     )
     break
   case 'production':
-    config.format = 'umd'
+    config.output.format = 'umd'
     config.plugins.push(
       replace({
         'process.env.NODE_ENV': JSON.stringify('production')
