@@ -50,7 +50,7 @@ function genConfig(options) {
   if (options.env) {
     res.plugins = res.plugins.concat([
       replace({
-        'process.env.NODE_ENV': options.env
+        'process.env.NODE_ENV': JSON.stringify(options.env)
       })
     ])
   }
