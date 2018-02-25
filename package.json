@@ -49,7 +49,7 @@
     "tslint-config-ktsn": "^2.0.0",
     "typescript": "^2.3.2",
     "uglify-js": "^3.0.1",
-    "webpack": "^3.0.0",
+    "webpack": "^4.0.0",
     "webpack-espower-loader": "^1.0.2"
   }
 }
