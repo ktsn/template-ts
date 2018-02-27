@@ -11,9 +11,7 @@ module.exports = {
     extensions: ['.ts', '.js']
   },
   module: {
-    rules: [
-      { test: /\.ts$/, use: ['webpack-espower-loader', 'ts-loader'] }
-    ]
+    rules: [{ test: /\.ts$/, use: ['webpack-espower-loader', 'ts-loader'] }]
   },
   mode: 'development',
   devtool: 'cheap-module-eval-source-map'

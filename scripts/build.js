@@ -66,7 +66,8 @@ function write(config, bundle, prod) {
   if (!prod) {
     return bundle.write(config.output)
   } else {
-    return bundle.generate(config.output)
+    return bundle
+      .generate(config.output)
       .then(minify)
       .then(({ code }) => {
         return new Promise((resolve, reject) => {
