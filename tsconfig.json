@@ -4,7 +4,13 @@
     "target": "es5",
     "module": "es2015",
     "moduleResolution": "node",
-    "strict": true
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   },
   "include": [
     "src/**/*.ts",
