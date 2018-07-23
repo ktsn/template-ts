@@ -1,3 +1,4 @@
+/* eslint-disable typescript/no-var-requires */
 const fs = require('fs')
 const { rollup } = require('rollup')
 const replace = require('rollup-plugin-replace')
@@ -82,7 +83,7 @@ function write(config, bundle, prod) {
   }
 }
 
-function minify({ code, map }) {
+function minify({ code }) {
   return uglify.minify(code, {
     compress: {
       toplevel: true

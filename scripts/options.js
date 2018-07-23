@@ -1,3 +1,4 @@
+/* eslint-disable typescript/no-var-requires */
 const pkg = require('../package.json')
 
 module.exports = [
