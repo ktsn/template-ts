@@ -48,7 +48,7 @@
     "prettier-config-ktsn": "^1.0.0",
     "rollup": "^0.64.1",
     "rollup-plugin-replace": "^2.0.0",
-    "testem": "^2.9.2",
+    "testem": "^2.9.3",
     "ts-loader": "^4.4.2",
     "typescript": "^3.0.1",
     "uglify-js": "^3.4.7",
