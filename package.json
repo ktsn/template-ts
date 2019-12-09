@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@types/mocha": "^5.2.5",
-    "@types/power-assert": "1.5.0",
+    "@types/power-assert": "1.5.2",
     "eslint": "^6.0.0",
     "eslint-config-ktsn-typescript": "^2.0.0",
     "glob": "^7.1.2",
