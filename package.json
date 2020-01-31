@@ -37,7 +37,7 @@
     "testem": "testem"
   },
   "devDependencies": {
-    "@types/mocha": "^5.2.5",
+    "@types/mocha": "^7.0.1",
     "@types/power-assert": "^1.5.3",
     "eslint": "^6.0.0",
     "eslint-config-ktsn-typescript": "^2.0.0",
