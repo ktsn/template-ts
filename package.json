@@ -39,7 +39,7 @@
   "devDependencies": {
     "@types/mocha": "^7.0.1",
     "@types/power-assert": "^1.5.3",
-    "eslint": "^6.0.0",
+    "eslint": "^7.0.0",
     "eslint-config-ktsn-typescript": "^2.0.0",
     "glob": "^7.1.2",
     "npm-run-all": "^4.1.3",
