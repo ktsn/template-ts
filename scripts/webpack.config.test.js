@@ -5,14 +5,14 @@ module.exports = {
   entry: glob.sync(path.resolve(__dirname, '../test/**/*.spec.ts')),
   output: {
     path: path.resolve(__dirname, '../.tmp'),
-    filename: 'test.js'
+    filename: 'test.js',
   },
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: ['.ts', '.js'],
   },
   module: {
-    rules: [{ test: /\.ts$/, use: ['webpack-espower-loader', 'ts-loader'] }]
+    rules: [{ test: /\.ts$/, use: ['webpack-espower-loader', 'ts-loader'] }],
   },
   mode: 'development',
-  devtool: 'cheap-module-eval-source-map'
+  devtool: 'cheap-module-eval-source-map',
 }
